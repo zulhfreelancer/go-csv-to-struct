@@ -6,8 +6,8 @@ import (
 	"testing"
 )
 
-func TestPR(t *testing.T) {
-	data, err := comdata.ReadPRCSVFile("comments.csv")
+func TestComment(t *testing.T) {
+	data, err := comdata.ReadCommentCSVFile("comments.csv")
 	if err != nil {
 		t.Fatal(err)
 	}

@@ -24,8 +24,8 @@ type CommentData struct {
 	Diff        string
 }
 
-// ReadPRCSVFile - return array of objects
-func ReadPRCSVFile(input string) (objs []CommentData, err error) {
+// ReadCommentCSVFile - return array of objects
+func ReadCommentCSVFile(input string) (objs []CommentData, err error) {
 	var data [][]string
 	sf, err := os.Open(input)
 	if err != nil {

@@ -2,7 +2,7 @@ package comdata
 
 import (
 	"fmt"
-	"go-csv-to-struct/comdata"
+	"github.com/zulhfreelancer/go-csv-to-struct/comdata"
 	"testing"
 )
 

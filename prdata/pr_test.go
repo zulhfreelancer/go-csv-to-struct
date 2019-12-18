@@ -2,7 +2,7 @@ package prdata
 
 import (
 	"fmt"
-	"go-csv-to-struct/prdata"
+	"github.com/zulhfreelancer/go-csv-to-struct/prdata"
 	"testing"
 )
 

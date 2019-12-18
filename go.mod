@@ -1,3 +1,3 @@
-module go-csv-to-struct
+module github.com/zulhfreelancer/go-csv-to-struct
 
 go 1.13

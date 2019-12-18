@@ -1,8 +1,8 @@
 package comdata
 
 import (
-	"csv-to-struct/comdata"
 	"fmt"
+	"go-csv-to-struct/comdata"
 	"testing"
 )
 

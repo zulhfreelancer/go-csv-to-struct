@@ -1,8 +1,8 @@
 package prdata
 
 import (
-	"csv-to-struct/prdata"
 	"fmt"
+	"go-csv-to-struct/prdata"
 	"testing"
 )
 

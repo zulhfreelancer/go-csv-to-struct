@@ -38,7 +38,11 @@ func ReadPRCSVFile(input string) (objs []PRData, err error) {
 
 	}
 	data, err = csv.NewReader(sf).ReadAll()
-	for _, line := range data {
+	for i, line := range data {
+		if i == 0 {
+			continue
+		}
+
 		var myObject PRData
 		myObject.Repository = line[0]
 		myObject.Type = line[1]

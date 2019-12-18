@@ -1,4 +1,4 @@
-package main
+package generator
 
 import (
 	"encoding/csv"
@@ -18,7 +18,8 @@ func readCSVFile(input string) (data [][]string, err error) {
 	return
 }
 
-func main() {
+// Generate - call this from outside of this project
+func Generate() {
 
 	data, err := readCSVFile("comdata/open.csv")
 	if err != nil {

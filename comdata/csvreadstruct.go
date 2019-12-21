@@ -14,6 +14,7 @@ type CommentData struct {
 	PRNumber    string
 	User        string
 	CommentType string
+	CommentID   string
 	BodyRaw     string
 	BodyHTML    string
 	CreatedAt   string
@@ -46,15 +47,16 @@ func ReadCommentCSVFile(input string) (objs []CommentData, err error) {
 		myObject.PRNumber = line[2]
 		myObject.User = line[3]
 		myObject.CommentType = line[4]
-		myObject.BodyRaw = line[5]
-		myObject.BodyHTML = line[6]
-		myObject.CreatedAt = line[7]
-		myObject.IsDeleted = line[8]
-		myObject.ToLine = line[9]
-		myObject.FromLine = line[10]
-		myObject.FilePath = line[11]
-		myObject.Diff = line[12]
-		myObject.ParentID = line[13]
+		myObject.CommentID = line[5]
+		myObject.BodyRaw = line[6]
+		myObject.BodyHTML = line[7]
+		myObject.CreatedAt = line[8]
+		myObject.IsDeleted = line[9]
+		myObject.ToLine = line[10]
+		myObject.FromLine = line[11]
+		myObject.FilePath = line[12]
+		myObject.Diff = line[13]
+		myObject.ParentID = line[14]
 		objs = append(objs, myObject)
 	}
 	return

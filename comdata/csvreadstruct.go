@@ -22,7 +22,7 @@ type CommentData struct {
 	FromLine    string
 	FilePath    string
 	Diff        string
-	CommentID   string
+	ParentID    string
 }
 
 // ReadCommentCSVFile - return array of objects
@@ -54,7 +54,7 @@ func ReadCommentCSVFile(input string) (objs []CommentData, err error) {
 		myObject.FromLine = line[10]
 		myObject.FilePath = line[11]
 		myObject.Diff = line[12]
-		myObject.CommentID = line[13]
+		myObject.ParentID = line[13]
 		objs = append(objs, myObject)
 	}
 	return

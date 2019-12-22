@@ -26,6 +26,7 @@ type PRData struct {
 	DestinationBranch string
 	DeclineReason     string
 	MergeCommit       string
+	ClosedBy          string
 }
 
 // ReadPRCSVFile - return array of objects
@@ -61,6 +62,7 @@ func ReadPRCSVFile(input string) (objs []PRData, err error) {
 		myObject.DestinationBranch = line[14]
 		myObject.DeclineReason = line[15]
 		myObject.MergeCommit = line[16]
+		myObject.ClosedBy = line[17]
 		objs = append(objs, myObject)
 	}
 	return

@@ -21,7 +21,7 @@ func readCSVFile(input string) (data [][]string, err error) {
 // Generate - call this from outside of this project
 func main() {
 
-	data, err := readCSVFile("comdata/comments.csv")
+	data, err := readCSVFile("prdata/pull-requests.csv")
 	if err != nil {
 		log.Fatal(err)
 	}
